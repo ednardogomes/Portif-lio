@@ -42,8 +42,11 @@ main {
 .avatar {
   width: 128px;
   height: 128px;
-  border: 3px solid #00ff00;
   border-radius: 100%;
+}
+
+.profile > img {
+  border: 3px solid #00ff00;
   margin-bottom: 1.875rem;
 }
 
@@ -139,11 +142,12 @@ h4 {
   display: flex;
   flex-direction: column;
   gap: 31px;
+  width: 59.5rem;
 }
 
 .my-projects,
 .recent-posts {
-  width: 59.5rem;
+  width: 100%;
   height: 5.375rem;
   display: flex;
   align-items: center;
@@ -152,27 +156,110 @@ h4 {
 
 .my-onix-container {
   display: flex;
+  gap: 30px;
+}
+
+.my-onix-left-contents > div > img {
+  width: 1.25rem;
+  height: 1.25rem;
 }
 
 .my-onix-left-contents,
 .my-onix-right-contents {
-  width: 461px;
-  height: 186px;
+  display: flex;
+  flex-direction: column;
+  width: 28.8125rem;
+  height: 11.625rem;
   padding: 30px;
   gap: 22px;
 }
 
-.my-onix-left-contents > div {
+.my-onix-left-contents > div:nth-child(1) {
   display: flex;
   gap: 16px;
 }
 
-.my-onix-right-contents > div {
+.my-onix-right-contents > div:nth-child(1) {
   display: flex;
   gap: 16px;
 }
 
-.my-onix-left-contents,
+.ellipse {
+  margin-left: 7.0625rem;
+}
+
 .my-onix-left-contents > p {
   font-size: 14px;
+}
+
+.my-onix-right-contents > p {
+  font-size: 14px;
+}
+
+.icons-myOnix {
+  display: flex;
+  gap: 16px;
+}
+
+.icons-myOnix > div {
+  display: flex;
+  gap: 8px;
+}
+
+.icons-myOnix > img {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.icons-myOnix > span {
+  font-size: 14px;
+}
+
+.avatar-description-container {
+  width: 100%;
+  height: 12.5625rem;
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  gap: 20px;
+}
+
+.descriptions-container {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.description-top {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.description-top > h5 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.description-top > p {
+  font-size: 14px;
+}
+
+.description-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.description-bottom > div {
+  display: flex;
+  gap: 8px;
+}
+
+.description-bottom > div > p {
+  font-size: 14px;
+}
+
+section {
+  font-size: 16px;
 }
